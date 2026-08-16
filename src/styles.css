@@ -256,3 +256,45 @@
 @utility animate-marquee {
   animation: marquee-x var(--marquee-duration, 40s) linear infinite;
 }
+
+/* ---- Desktop trading terminal tokens (dex UI) ---- */
+:root {
+  --panel: oklch(0.9455 0.019 73);
+  --panel-2: oklch(0.9185 0.0248 68.5);
+  --up: oklch(0.535 0.125 155);
+  --up-soft: oklch(0.535 0.125 155 / 0.14);
+  --down: oklch(0.575 0.198 25.5);
+  --down-soft: oklch(0.575 0.198 25.5 / 0.14);
+  --gold: oklch(0.79 0.115 78);
+  --gold-strong: oklch(0.72 0.13 72);
+  --gradient-gold: linear-gradient(90deg, oklch(0.9 0.08 88), oklch(0.83 0.115 74));
+  --shadow-panel: 0 1px 2px oklch(0.4 0.04 60 / 0.06);
+}
+
+.theme-light {
+  --panel: oklch(0.955 0.003 260);
+  --panel-2: oklch(0.968 0.002 260);
+  --up: oklch(0.55 0.13 155);
+  --up-soft: oklch(0.55 0.13 155 / 0.14);
+  --down: oklch(0.575 0.198 25.5);
+  --down-soft: oklch(0.575 0.198 25.5 / 0.14);
+}
+
+@theme inline {
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --color-gold: var(--gold);
+  --color-gold-strong: var(--gold-strong);
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
