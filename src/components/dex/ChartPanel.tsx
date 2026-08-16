@@ -47,7 +47,7 @@ function sma(values: number[], period: number) {
   return values.map((_, i) => {
     if (i < period - 1) return null;
     let sum = 0;
-    for (let k = i - period + 1; k <= i; k++) sum += values[k];
+    for (let k = i - period + 1; k <= i; k++) sum += values[k] ?? 0;
     return sum / period;
   });
 }
