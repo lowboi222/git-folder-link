@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import { ConnectButton } from "@/components/ConnectButton";
 import { BottomNav } from "@/components/BottomNav";
 import { OrdersPanel } from "@/components/OrdersPanel";
-import { DesktopTerminal } from "@/components/desktop/DesktopTerminal";
+import { DexTerminal } from "@/components/dex/DexTerminal";
 import { OrderTypeSheet } from "@/components/OrderTypeSheet";
 import { TickSizeSheet } from "@/components/TickSizeSheet";
 import { ExpirySheet } from "@/components/ExpirySheet";
@@ -203,7 +203,7 @@ function Index() {
     return () => mql.removeEventListener("change", sync);
   }, []);
 
-  return desktop ? <DesktopTerminal /> : <MobileTrade />;
+  return desktop ? <DexTerminal /> : <MobileTrade />;
 }
 
 function MobileTrade() {
