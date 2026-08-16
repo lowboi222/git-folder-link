@@ -298,3 +298,35 @@
     transform: translateX(-100%);
   }
 }
+
+/* Original dex terminal palette, scoped to the desktop terminal only. */
+.dex-root {
+  --radius: 0.5rem;
+  --background: oklch(0.9723 0.0189 76.5);
+  --foreground: oklch(0.235 0.014 60);
+  --card: oklch(0.9832 0.0128 78);
+  --card-foreground: oklch(0.235 0.014 60);
+  --popover: oklch(0.9832 0.0128 78);
+  --popover-foreground: oklch(0.235 0.014 60);
+  --primary: oklch(0.845 0.094 78);
+  --primary-foreground: oklch(0.26 0.03 60);
+  --secondary: oklch(0.9445 0.0186 70);
+  --secondary-foreground: oklch(0.3 0.02 60);
+  --muted: oklch(0.9445 0.0186 70);
+  --muted-foreground: oklch(0.545 0.025 62);
+  --accent: oklch(0.915 0.0265 70);
+  --accent-foreground: oklch(0.28 0.02 60);
+  --border: oklch(0.902 0.023 70);
+  --input: oklch(0.902 0.023 70);
+  --ring: oklch(0.82 0.06 76);
+  --panel: oklch(0.9445 0.0186 70);
+  --panel-2: oklch(0.915 0.0265 70);
+  --up: oklch(0.545 0.128 155);
+  --up-soft: oklch(0.545 0.128 155 / 0.14);
+  --down: oklch(0.555 0.185 26);
+  --down-soft: oklch(0.555 0.185 26 / 0.14);
+  --gold: oklch(0.79 0.115 78);
+  --gold-strong: oklch(0.72 0.13 72);
+  --gradient-gold: linear-gradient(90deg, oklch(0.9 0.08 88), oklch(0.83 0.115 74));
+  --shadow-panel: 0 1px 2px oklch(0.4 0.04 60 / 0.06);
+}
